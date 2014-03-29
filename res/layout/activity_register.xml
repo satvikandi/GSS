@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.53" >
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="159dp"
+            android:ems="10"
+            android:hint="First Name" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstname"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Last Name" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastname"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username"
+            android:layout_alignRight="@+id/username"
+            android:layout_below="@+id/username"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Email-id" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/reghere" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailid"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="31dp"
+            android:layout_toLeftOf="@+id/reset"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/register"
+            android:layout_alignBottom="@+id/register"
+            android:layout_alignRight="@+id/emailid"
+            android:layout_marginRight="30dp"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:text="Reset" />
+
+    </RelativeLayout>
+
+</LinearLayout>

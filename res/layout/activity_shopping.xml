@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shelf">
+     
+    
+       <RelativeLayout
+          android:id="@+id/firstLayout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" 
+          android:layout_marginTop="100dp">
+
+          <!-- <ImageButton
+              android:id="@+id/ib"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="0dp"
+              android:background="@null"
+              android:src="@drawable/logo" /> 
+
+          <ImageButton
+              android:id="@+id/imageButton1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_marginRight="30dp"
+              android:layout_toLeftOf="@+id/imageButton2"
+              android:src="@drawable/apple" />
+
+          <ImageButton
+              android:id="@+id/imageButton2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="16dp"
+              android:src="@drawable/banana" />-->
+          
+          </RelativeLayout>
+     
+      <SlidingDrawer
+          android:id="@+id/slidingDrawer"
+          android:layout_width="wrap_content"
+          android:layout_height="267dp"
+          android:content="@+id/content"
+          android:duplicateParentState="true"
+          android:gravity="center_horizontal"
+          android:handle="@+id/handle"
+          android:orientation="vertical"
+          android:rotation="180" >
+
+          <ImageButton
+              android:id="@+id/handle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@null"
+              android:onClick="changeHandle"
+              android:rotation="180"
+              android:src="@drawable/down" />
+
+          <LinearLayout
+              android:id="@+id/content"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+ <ListView
+          android:id="@+id/listview"
+          style="@style/ListView"
+          android:layout_width="fill_parent"
+          android:layout_height="0dip"
+          android:layout_weight="1"
+          android:listSelector="@drawable/list_selector"
+          android:rotation="180" >
+      </ListView>
+          </LinearLayout>
+      </SlidingDrawer>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" >
+
+     <ImageButton
+         android:id="@+id/ib"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:background="@null"
+         android:src="@drawable/trolley2"
+         android:tag="10" />
+
+     <ImageButton
+         android:id="@+id/imageButton1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/ib"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="27dp"
+         android:src="@drawable/banana"
+         android:tag="1" />
+
+     <ImageButton
+         android:id="@+id/imageButton2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="14dp"
+         android:layout_toRightOf="@+id/ib"
+         android:src="@drawable/money_bag_lg" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/imageButton2"
+         android:layout_alignTop="@+id/ib"
+         android:text="TextView" />
+
+ </RelativeLayout>
+
+</FrameLayout>

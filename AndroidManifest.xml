@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gss"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">>
+        <activity
+            android:name="com.example.gss.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Login" android:name=".Login"></activity>
+        <activity android:label="Register" android:name=".Register"></activity>
+        <activity android:label="ChangePassword" android:name=".ChangePass"></activity>
+        <activity android:label="PreShopping" android:name=".PreShopping"></activity>
+        <activity android:label="Verify" android:name=".Verify"></activity>
+        <activity android:label="Shopping" android:name=".Shopping" 
+            android:screenOrientation="landscape"></activity>
+        <activity android:label="Deals" android:name=".Deals"
+            android:screenOrientation="landscape"></activity>
+        <activity android:label="newShopping" android:name=".Shopping_new"
+            android:screenOrientation="landscape"></activity>
+        <activity android:label="OneItem" android:name=".oneItem"></activity>
+        <activity
+            android:name="com.example.gss.MainDescriptionActivity"
+            android:label="title_activity_main_description" 
+             android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_IT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+    </application>
+
+</manifest>
